@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Word Game Example</title>
+<link rel="stylesheet" type="text/css" href="optional.css">
+<style type="text/css">
+		/* Optional styles */
+		
+		.wgcontrols {
+			float: left;
+			padding: 1em 2em 1em 1em;
+			width: 100px;
+		}
+		
+		.wggrid {
+			float: left;
+		}
+		
+		.wgitem {
+			border: 1px solid silver;
+			background-color: #444444;
+			color: White;
+			font-size: 1.6em;
+			text-transform: uppercase;
+			overflow: hidden;
+		}
+		
+		.wgcontrols p {
+			padding: 2px 5px;
+		}
+		
+		.wgadd:hover, .wgclear:hover {
+			background-color: #444444;
+			color: White;
+		}
+		
+		.wgselected {
+			background-color: Green;
+		}
+
+	</style>
+</head>
+<body>
+
+<div id="header">
+
+</div>
+<div id="maincontent">
+<div id="what">
+<h2 align="center">Word Game</h2>
+<hr align="center">
+</div>
+
+<div id="how">
+
+<div id="wordgame1"></div>
+</div>
+
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.wordgame.js"></script>
+<script type="text/javascript">
+		$("#wordgame1").wordgame({ timer: 180 });
+	</script>
+</body>
+</html>
